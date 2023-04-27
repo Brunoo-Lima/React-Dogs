@@ -1,0 +1,36 @@
+$type-first: Helvetica, Arial, sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+button,
+input {
+  display: block;
+  font-size: 1rem;
+  color: #333;
+  font-family: $type-first;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  color: #333;
+  font-family: $type-first;
+}
+
+.container {
+  max-width: 50rem;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
