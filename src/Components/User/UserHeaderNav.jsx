@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../User/UserHeaderNav.module.css';
+import styles from '../User/UserStyle/UserHeaderNav.module.css';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { UserContext } from '../../UserContext';
 import { ReactComponent as MyPhotos } from '../../Assets/feed.svg';
