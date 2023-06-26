@@ -33,12 +33,11 @@ export const UserStorage = ({ children }) => {
       setError(null);
       setLoading(true);
       const { url, options } = TOKEN_POST({ username, password });
-
       const tokenResponse = await fetch(url, options);
-      const { token } = await tokenResponse.json();
-      if (!tokenResponse.ok) {
+
+      if (!tokenResponse.ok)
         throw new Error(`Error: ${tokenResponse.statusText}`);
-      }
+      const { token } = await tokenResponse.json();
       window.localStorage.setItem('token', token);
       await getUser(token);
       navigate('/conta');
